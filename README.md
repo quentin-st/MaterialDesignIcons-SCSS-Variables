@@ -1,12 +1,29 @@
 # MaterialDesignIcons-SCSS-Variables
 This SCSS part file allows you to use [MaterialDesignIcons](https://github.com/Templarian/MaterialDesign)
-project directly from your SCSS files.
+project directly from your SCSS files: instead of using `<i class="mdi mdi-refresh"></i>`, you'll be able to style any
+element from SCSS:
 
-Instead of using `<i class="mdi mdi-refresh"></i>`, you'll be able to style a button from SCSS:
+![MaterialDesignIcons-SCSS-Variables](doc/screenshot.png)
 
+## How to use this
+Copy [`generated/_materialdesignicons.scss`](https://raw.githubusercontent.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/master/generated/_materialdesignicons.scss)
+& [`generated/_materialdesignicons-vars.scss`](https://raw.githubusercontent.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/master/generated/_materialdesignicons-vars.scss)
+into your project, and import them in your scss file:
+
+    # style.scss 
+    
+    # Import materialdesignicons mixin & variables
+    @import 'materialdesignicons';
+    @import 'materialdesignicons-vars';
+    
+    // Refresh icon
     .icon-refresh {
         @include material-icon($mdi-refresh);
     }
+
+## How to update `_materialdesignicons-vars.scss` file
+
+> Note: you usually don't want to do that, except if some icons are missing from the generated file.
 
 The `generate.py` script generates `_materialdesignicons-vars.scss` from MaterialDesignIcons input file:
 
@@ -19,21 +36,6 @@ The `generate.py` script generates `_materialdesignicons-vars.scss` from Materia
     $mdi-account-card-details: "\F5D2";
     $mdi-account-check: "\F008";
     ...
-
-## How to use this
-Copy [`generated/_materialdesignicons.scss`](generated/_materialdesignicons.scss) & [`generated/_materialdesignicons-vars.scss`](generated/_materialdesignicons-vars.scss)
-into your project, and import them in your scss file:
-
-    # Import materialdesignicons variables
-    @import 'materialdesignicons';
-    @import 'materialdesignicons-vars';
-    
-    // Refresh icon
-    .icon-refresh {
-        @include material-icon($mdi-refresh);
-    }
-
-## How to update the vars list file
 
 1. Download the Webfont from [materialdesignicons.com](https://materialdesignicons.com/)
 2. Unzip the directory, and copy the `scss/_materialdesignicons.scss` file inside the `input/` directory
