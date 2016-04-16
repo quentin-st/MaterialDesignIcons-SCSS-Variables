@@ -37,7 +37,5 @@ The `generate.py` script generates `_materialdesignicons-vars.scss` from Materia
     $mdi-account-check: "\F008";
     ...
 
-1. Download the Webfont from [materialdesignicons.com](https://materialdesignicons.com/)
-2. Unzip the directory, and copy the `scss/_materialdesignicons.scss` file inside the `input/` directory
-3. Run `python generate.py`
-4. Enjoy `generated/_materialdesignicons-vars.scss`!
+1. Run `python generate.py`: [_icons.scss](https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_icons.scss) will be downloaded from MaterialDesignIcon's repository
+2. Enjoy `generated/_materialdesignicons-vars.scss`!

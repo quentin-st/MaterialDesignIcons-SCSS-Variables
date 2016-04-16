@@ -2,24 +2,21 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import os
+import urllib.request
 import re
 
 icon_prefix = 'mdi-'
-input_file = 'input/_materialdesignicons.scss'
+input_file_uri = 'https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_icons.scss'
 output_file = 'generated/_materialdesignicons-vars.scss'
 output_header = """/**
  * MaterialDesignIcons-SCSS-Variables
  * https://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables
  */\n\n"""
 
-# Check if input file exists
-if not os.path.isfile(input_file):
-    print("Missing input file")
-    sys.exit(1)
-
 # Read & parse input file
-input = open(input_file, 'r').readlines()
+response = urllib.request.urlopen(input_file_uri)
+data = response.read()
+input = data.decode('utf-8').splitlines()
 
 # First line contains keys, second line contains values
 icons_hexes_raw = input[0]
