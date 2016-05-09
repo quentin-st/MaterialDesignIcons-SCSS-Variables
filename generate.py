@@ -13,7 +13,7 @@ output_header = """/**
  * https://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables
  */\n\n"""
 
-# Read & parse input file
+# Download & parse input file
 response = urllib.request.urlopen(input_file_uri)
 data = response.read()
 input = data.decode('utf-8').splitlines()
@@ -31,15 +31,15 @@ if len(icons_hexes) != len(icons_names):
     sys.exit(1)
 
 # Write in generated file
-output = open(output_file, 'w')
-output.truncate()
+with open(output_file, 'w') as output:
+    output.truncate()
 
-output.writelines(output_header)
+    output.writelines(output_header)
 
-for i in range(len(icons_hexes)):
-    icon_hex = icons_hexes[i]
-    icon_name = icons_names[i]
+    for i in range(len(icons_hexes)):
+        icon_hex = icons_hexes[i]
+        icon_name = icons_names[i]
 
-    output.write('${}: "\{}";\n'.format(icon_prefix + icon_name, icon_hex))
+        output.write('${}: "\{}";\n'.format(icon_prefix + icon_name, icon_hex))
 
-print("Generated {} with {} variables".format(output_file, len(icons_hexes)))
+    print("Generated {} with {} variables".format(output_file, len(icons_hexes)))
