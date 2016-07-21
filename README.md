@@ -3,7 +3,7 @@ This SCSS part file allows you to use [MaterialDesignIcons](https://github.com/T
 project directly from your SCSS files: instead of using `<i class="mdi mdi-refresh"></i>`, you'll be able to style any
 element from SCSS:
 
-![MaterialDesignIcons-SCSS-Variables](doc/screenshot.png)
+![MaterialDesignIcons-SCSS-Variables](doc/screenshot.gif)
 
 ## How to use this
 Copy [`generated/_materialdesignicons.scss`](https://raw.githubusercontent.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/master/generated/_materialdesignicons.scss)
