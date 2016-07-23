@@ -16,7 +16,7 @@
   "license": "GPL-2.0",
   "ignore": [
     "**/.*",
-    "*",
-    "!dist/"
+    "generate.py",
+    "doc/screenshot.py"
   ]
 }
