@@ -27,7 +27,7 @@ element from SCSS:
     // Import materialdesignicons mixin & variables
     @import '../../../bower_components/materialdesignicons-scss-variables/dist/materialdesignicons';
     @import '../../../bower_components/materialdesignicons-scss-variables/dist/materialdesignicons-vars';
-    `̀``
+    ```
 
 ### Manually
 1. Copy [`dist/_materialdesignicons.scss`](https://raw.githubusercontent.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/master/dist/_materialdesignicons.scss)
