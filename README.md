@@ -3,7 +3,7 @@ This SCSS part file allows you to use [MaterialDesignIcons](https://github.com/T
 project directly from your SCSS files: instead of using `<i class="mdi mdi-refresh"></i>`, you'll be able to style any
 element from SCSS:
 
-![MaterialDesignIcons-SCSS-Variables](doc/screenshot.png)
+![MaterialDesignIcons-SCSS-Variables](doc/screenshot.gif)
 
 ## How to use this
 Copy [`generated/_materialdesignicons.scss`](https://raw.githubusercontent.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/master/generated/_materialdesignicons.scss)
@@ -37,5 +37,6 @@ The `generate.py` script generates `_materialdesignicons-vars.scss` from Materia
     $mdi-account-check: "\F008";
     ...
 
-1. Run `python generate.py`: [_icons.scss](https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_icons.scss) will be downloaded from MaterialDesignIcon's repository
+1. Run `python generate.py`: [_variables.scss](https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_variables.scss)
+will be downloaded and parsed from MaterialDesignIcon's repository to update `_materialdesignicons-vars.scss`.
 2. Enjoy `generated/_materialdesignicons-vars.scss`!
