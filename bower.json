@@ -1,0 +1,22 @@
+{
+  "name": "MaterialDesignIcons-SCSS-Variables",
+  "homepage": "https://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables",
+  "keywords": ["MaterialDesignIcons", "scss"],
+  "authors": [
+    "Quentin Stoeckel <stoeckel.quentin@gmail.com> (https://www.s-quent.in)"
+  ],
+  "description": "MaterialDesignIcons as SCSS variables",
+  "repository": {
+  	"type": "git",
+  	"url": "git://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables.git"
+  },
+  "main": [
+    "./dist/_materialdesignicons-vars.scss",
+  ],
+  "license": "GPL-2.0",
+  "ignore": [
+    "**/.*",
+    "*",
+    "!dist/"
+  ]
+}
