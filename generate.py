@@ -7,7 +7,7 @@ import re
 
 icon_prefix = 'mdi-'
 input_file_uri = 'https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_variables.scss'
-output_file = 'generated/_materialdesignicons-vars.scss'
+output_file = 'dist/_materialdesignicons-vars.scss'
 output_header = """/**
  * MaterialDesignIcons-SCSS-Variables
  * https://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables
@@ -25,7 +25,7 @@ if len(matches) == 0:
     print('Could not find variables.')
     sys.exit(1)
 
-# Write in generated file
+# Write in dist file
 with open(output_file, 'w') as output:
     output.truncate()
 

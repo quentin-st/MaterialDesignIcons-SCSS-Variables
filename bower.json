@@ -17,6 +17,6 @@
   "ignore": [
     "**/.*",
     "generate.py",
-    "doc/screenshot.py"
+    "doc/screenshot.gif"
   ]
 }
