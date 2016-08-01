@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import urllib.request
-import re
 from upstream_parser import mdi_upstream
 
 icon_prefix = 'mdi-'
