@@ -17,7 +17,7 @@ element from SCSS:
 ### Using bower
 1. Add bower dependency
 
-        bower install materialdesignicons-scss-variables
+        bower install --save materialdesignicons-scss-variables
 
 2. Reference SCSS part files using relative path
     
