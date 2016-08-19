@@ -14,16 +14,20 @@ element from SCSS:
 }
 ```
 
+> Note: since MaterialDesignIcons v1.7.12, `.mdi` does its magic on `:before` only ([read more here](https://github.com/Templarian/MaterialDesign/issues/1258)).
+ We echoed this change on `@mixin material-icon($icon)` and created `@mixin material-icon-set($icon)` to match the new `.mdi-set` selector.
+
+
 ### Using bower
 1. Add bower dependency
 
         bower install --save materialdesignicons-scss-variables
 
 2. Reference SCSS part files using relative path
-    
+
     ```scss
-    /* style.scss */ 
-    
+    /* style.scss */
+
     // Import materialdesignicons mixin & variables
     @import '../../../bower_components/materialdesignicons-scss-variables/dist/materialdesignicons';
     @import '../../../bower_components/materialdesignicons-scss-variables/dist/materialdesignicons-vars';
@@ -34,11 +38,11 @@ element from SCSS:
     & [`dist/_materialdesignicons-vars.scss`](https://raw.githubusercontent.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/master/dist/_materialdesignicons-vars.scss)
     into your project
 
-2. Reference SCSS part files 
+2. Reference SCSS part files
 
     ```scss
-    /* style.scss */ 
-    
+    /* style.scss */
+
     // Import materialdesignicons mixin & variables
     @import 'materialdesignicons';
     @import 'materialdesignicons-vars';
