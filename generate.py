@@ -36,7 +36,7 @@ def write_to_file(filename, output_type):
 
 
 # Download & parse input file
-meta = mdi_upstream.fetch_meta()
+meta = mdi_upstream.fetch_meta(None, True)
 
 if len(meta['icons']) == 0:
     print('Could not find variables.')
