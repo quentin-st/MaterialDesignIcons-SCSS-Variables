@@ -36,6 +36,16 @@
 }
 
 /**
+ * .selector {
+ *     @include material-icon-simple($mdi-account);
+ * }
+ */
+@mixin material-icon-simple($icon) {
+    @extend %mdi;
+    content: $icon;
+}
+
+/**
  * https://github.com/Templarian/MaterialDesign-Webfont/blob/master/scss/_functions.scss
  */
 @function char($character-code) {
