@@ -48,6 +48,14 @@ element from SCSS:
     @import 'materialdesignicons-vars';
     ```
 
+## Versions
+Depending on the version of MaterialDesignIcons you're using, you'll want to pick one or another version of this library:
+
+| MaterialDesignIcons's version | SVSS-vars version                                                                                                       |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| <= 1.6.50                     | [1.0.3](https://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/tree/448915eea3ab17bc827ec78d49bca64f75e39c0c) |
+| 1.7.12                        | [2.0.0](https://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/tree/975015a41f6e6112910e04be66ec436a53c3f087) |
+
 ## How to update `_materialdesignicons-vars.scss` file
 
 > Note: you usually don't want to do that, except if some icons are missing from the generated file.
