@@ -56,6 +56,7 @@ Depending on the version of MaterialDesignIcons you're using, you'll want to pic
 | <= 1.6.50                     | [1.0.3](https://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/tree/448915eea3ab17bc827ec78d49bca64f75e39c0c) |
 | 1.7.12                        | [2.1.0](https://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/tree/975015a41f6e6112910e04be66ec436a53c3f087) |
 | 1.7.22                        | [2.2.0](https://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/tree/8d54d39157b29bce3b3bc2e60dcc416f071e9b4f) |
+| 2.3.99                        | [2.3.0](https://github.com/chteuchteu/MaterialDesignIcons-SCSS-Variables/tree/d2130ebbc1a0fef32b568677fbab35ac0fd111d8) |
 
 ## How to update `_materialdesignicons-vars.scss` file
 
